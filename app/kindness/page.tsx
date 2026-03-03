@@ -97,8 +97,9 @@ export default function RouteThreePage() {
       
       <div className="flex flex-row items-end gap-2.5 w-full">
         <div className="flex flex-col items-start gap-2.5 flex-1">
-          <p className="font-['Kanit'] font-normal text-base md:text-2xl leading-[150%] text-[#171717]">Welcome,</p>
-          <h1 className="font-['Playfair_Display'] font-black text-2xl md:text-[56px] leading-[120%] text-[#A50019] w-full">Your memories with Royi Sal</h1>
+          <h1 className="font-['Playfair_Display'] font-black text-2xl md:text-[56px] leading-[120%] text-[#A50019] w-full ">Royi Sal Digital Inheritance</h1>
+          <p className="font-['Kanit'] font-normal text-base md:text-2xl leading-[150%] text-[#171717]">One day she will listen, she will watch</p>
+          
         </div>
         <input
           ref={fileInputRef}

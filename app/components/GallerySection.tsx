@@ -126,7 +126,7 @@ export default function GallerySection({ route, onAddMemory, isUploading }: Gall
 
   return (
     <section className="w-[100%] md:min-h-[60vh]">
-      <div className="mb-6 flex flex-row justify-between items-center w-full mx-auto px-2 md:px-12">
+      <div className="mb-6 flex flex-row justify-between items-center w-full mx-auto ">
         <div className="hidden md:flex flex-row items-center gap-[5px] ">
            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
             <path d="M21.25 1.25H1.25L9.25 10.71V17.25L13.25 19.25V10.71L21.25 1.25Z" stroke="#1E1E1E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -156,7 +156,7 @@ export default function GallerySection({ route, onAddMemory, isUploading }: Gall
 
       {loading ? (
         <div className="w-[100%] ">
-          <div className="grid grid-cols-3 auto-rows-fr gap-[5px] w-full mx-auto px-2 md:px-12">
+          <div className="grid grid-cols-3 auto-rows-fr gap-[5px] w-full mx-auto ">
             {[...Array(itemsPerPage)].map((_, i) => (
               <div
                 key={i}
@@ -171,7 +171,7 @@ export default function GallerySection({ route, onAddMemory, isUploading }: Gall
         </div>
       ) : (
         <div className="w-full min-h-0">
-          <div className="grid grid-cols-3 gap-[5px] w-full px-2 md:px-12 auto-rows-fr">
+          <div className="grid grid-cols-3 gap-[5px] w-full  auto-rows-fr">
             {paginatedFiles.map((file) => (
               <div
                 key={file.path}
@@ -257,7 +257,7 @@ export default function GallerySection({ route, onAddMemory, isUploading }: Gall
 
           {/* Mobile Add Memory Button */}
           {onAddMemory && (
-            <div className="md:hidden flex justify-end px-2 md:px-12 mt-6">
+            <div className="md:hidden flex justify-end  mt-6">
               <button 
                 className="flex items-center justify-center w-12 h-12 bg-[#A50019] rounded-[10px] disabled:opacity-60 cursor-pointer shadow-lg"
                 onClick={onAddMemory}
@@ -278,7 +278,7 @@ export default function GallerySection({ route, onAddMemory, isUploading }: Gall
 
           {/* Pagination Controls */}
           {totalPages > 1 && (
-            <div className="flex flex-row justify-center items-center gap-2 mt-8 mb-6 px-2 md:px-12">
+            <div className="flex flex-row justify-center items-center gap-2 mt-8 mb-6 ">
               <button
                 onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
                 disabled={currentPage === 1}
